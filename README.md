@@ -20,3 +20,29 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
   <li><b>Scope:</b> Focus on the latest dataset only; historical data is not required.</li>
   <li><b>Documentation:</b> Provide clear documentation of the data model to support both business stakeholders and analytics teams.</li>
 </ul>
+
+<hr>
+
+<h4>BI: Analytics & Reporting (Data Analytics)</h4>
+
+<b>Objective</b>
+
+Develop SQL-based analytics to deliver detailed insights into:
+
+<ul>
+  <li><b>Customer Behavior</b></li>
+  <li><b>Product Performance</b></li>
+  <li><b>Sales Trends</b></li>
+</ul>
+
+These insights empower stakeholders with key business metrics, enabling strategic decision-making.
+
+<hr>
+
+<h3>🔗 License</h3>
+
+This project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>. You are free to use, modify, and share this project with proper attribution.
+
+<h3>🌟 About Me</h3>
+
+Hi there! I'm Baraa Khatib Salkini, also known as <b>Data With Baraa</b>. I'm an IT professional and passionate YouTuber on a mission to share knowledge and make working with data enjoyable and engaging!
