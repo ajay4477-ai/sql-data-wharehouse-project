@@ -40,11 +40,3 @@ Develop SQL-based analytics to deliver detailed insights into:
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
 
 <hr>
-
-<h3>🔗 License</h3>
-
-This project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>. You are free to use, modify, and share this project with proper attribution.
-
-<h3>🌟 About Me</h3>
-
-Hi there! I'm Baraa Khatib Salkini, also known as <b>Data With Baraa</b>. I'm an IT professional and passionate YouTuber on a mission to share knowledge and make working with data enjoyable and engaging!
