@@ -141,25 +141,6 @@ The Gold layer uses a star schema consisting of:
 
 The Gold layer exposes these views for consumption by downstream tools and applications.
 
-## Database Structure
-
-The database is organized into three schemas:
-
-| Schema | Purpose |
-|---|---|
-| `bronze` | Stores raw data from source files. |
-| `silver` | Stores cleaned and standardized data. |
-| `gold` | Exposes business-ready fact and dimension views. |
-
-Each schema separates the responsibilities of data ingestion, transformation, and presentation, making the data warehouse easier to maintain and extend.
-
-### Prerequisites
-
-- Microsoft SQL Server
-- SQL Server Management Studio (SSMS)
-- CRM and ERP source CSV files
-- Git
-
 ## 👤 Author
 
 **Ajay Bharati**
