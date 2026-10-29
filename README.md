@@ -10,8 +10,6 @@ The final data is organized into fact and dimension views that can be used for P
 
 ## Data Warehouse Architecture
 
-The project follows a three-layer Medallion Architecture:
-
 ![Data Warehouse Architecture](documents/data_architecture.png)
 
 - **Bronze Layer:** Stores raw data extracted from CRM and ERP CSV files.
