@@ -68,9 +68,8 @@ The source files contain different data types, such as integers, decimal numbers
 ### 1. Extract
 
 - Extract data from CRM and ERP CSV files.
-- Load the source data into the Bronze layer using SQL Server.
-- Preserve the original source values as much as possible for traceability.
-
+- Load the source data into the Bronze layer using SQL Server
+- 
 ### 2. Transform
 
 - Clean and standardize the raw data in the Silver layer.
@@ -95,12 +94,6 @@ The Bronze layer is the initial storage layer of the data warehouse. It stores r
 - Use a full-load strategy where applicable.
 - Organize raw data into separate tables based on source systems and entities.
 
-### Example Tables
-
-- `bronze.crm_cust_info`
-- `bronze.crm_prd_info`
-- `bronze.crm_sales_details`
-
 ## Silver Layer — Cleaned and Standardized Data
 
 The Silver layer processes the raw data from the Bronze layer and improves its quality, consistency, and usability.
@@ -113,12 +106,6 @@ The Silver layer processes the raw data from the Bronze layer and improves its q
 - Convert columns to appropriate data types.
 - Apply data cleaning and validation rules.
 - Store transformed data in Silver tables.
-
-### Example Tables
-
-- `silver.crm_cust_info`
-- `silver.crm_prd_info`
-- `silver.crm_sales_details`
 
 ## Gold Layer — Business-Ready Data
 
@@ -138,8 +125,6 @@ The Gold layer uses a star schema consisting of:
 
 - **Fact views:** Contain measurable business events and references to related dimensions.
 - **Dimension views:** Contain descriptive information used to organize and provide context to business data.
-
-The Gold layer exposes these views for consumption by downstream tools and applications.
 
 ## 👤 Author
 
