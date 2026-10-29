@@ -1,6 +1,6 @@
 # SQL Server Data Warehouse Project
 
-## 📌 Project Overview
+## Project Overview
 
 This project focuses on building a SQL Server Data Warehouse that transforms raw data from CRM and ERP source systems into clean, standardized, and meaningful data.
 
@@ -8,7 +8,7 @@ The data warehouse follows a Medallion Architecture consisting of three layers: 
 
 The final data is organized into fact and dimension views that can be used for Power BI reporting, machine learning applications, and other downstream data solutions.
 
-## 🏗️ Data Warehouse Architecture
+## Data Warehouse Architecture
 
 The project follows a three-layer Medallion Architecture:
 
@@ -41,7 +41,7 @@ CRM and ERP Source Systems
   Power BI / Machine Learning
 ```
 
-## 🛠️ Tools and Technologies
+## Tools and Technologies
 
 - **Microsoft SQL Server** – Database platform for storing and processing data.
 - **SQL Server Management Studio (SSMS)** – Used to develop, execute, and manage SQL scripts.
@@ -49,7 +49,7 @@ CRM and ERP Source Systems
 - **CSV Files** – Source files containing CRM and ERP data.
 - **Git and GitHub** – Used for version control and project documentation.
 
-## 📂 Data Sources
+## Data Sources
 
 The data warehouse uses CSV files from two source systems:
 
@@ -63,7 +63,7 @@ Contains additional business data from the ERP system, including supporting info
 
 The source files contain different data types, such as integers, decimal numbers, strings, and dates. These files are loaded into SQL Server for further processing.
 
-## 🔄 ETL Process
+## ETL Process
 
 ETL stands for **Extract, Transform, and Load**. It describes the process of collecting data from source systems, preparing it for reliable use, and making it available in the data warehouse.
 
@@ -86,7 +86,7 @@ ETL stands for **Extract, Transform, and Load**. It describes the process of col
 - Organize the data into fact and dimension views.
 - Apply a star schema to support downstream reporting and data applications.
 
-## 🥉 Bronze Layer — Raw Data
+## Bronze Layer — Raw Data
 
 The Bronze layer is the initial storage layer of the data warehouse. It stores raw data loaded from the source CSV files.
 
@@ -103,7 +103,7 @@ The Bronze layer is the initial storage layer of the data warehouse. It stores r
 - `bronze.crm_prd_info`
 - `bronze.crm_sales_details`
 
-## 🥈 Silver Layer — Cleaned and Standardized Data
+## Silver Layer — Cleaned and Standardized Data
 
 The Silver layer processes the raw data from the Bronze layer and improves its quality, consistency, and usability.
 
@@ -122,7 +122,7 @@ The Silver layer processes the raw data from the Bronze layer and improves its q
 - `silver.crm_prd_info`
 - `silver.crm_sales_details`
 
-## 🥇 Gold Layer — Business-Ready Data
+## Gold Layer — Business-Ready Data
 
 The Gold layer provides a structured representation of the cleaned and integrated data for downstream applications.
 
@@ -143,7 +143,7 @@ The Gold layer uses a star schema consisting of:
 
 The Gold layer exposes these views for consumption by downstream tools and applications.
 
-## 🗂️ Database Structure
+## Database Structure
 
 The database is organized into three schemas:
 
@@ -155,7 +155,7 @@ The database is organized into three schemas:
 
 Each schema separates the responsibilities of data ingestion, transformation, and presentation, making the data warehouse easier to maintain and extend.
 
-## ⚙️ Stored Procedures
+## Stored Procedures
 
 Stored procedures are used to organize and execute repeatable data-loading operations.
 
@@ -165,7 +165,7 @@ SQL scripts are also used to create and populate Silver tables and define Gold-l
 
 This approach helps organize the loading and transformation logic into reusable database objects.
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to set up the project locally.
 
