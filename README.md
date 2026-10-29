@@ -1,88 +1,66 @@
-# Data Warehouse and Analytics Project
- 
-Welcome to the **Data Warehouse and Analytics Project** repository!🚀<br> 
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics. 
 
----
-## 🏗️ Data Architecture
+# SQL Server Data Warehouse Project
 
-The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
-![Data Architecture](documents/data_architecture.png)
- 
-1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
+## 📌 Project Overview
+Briefly describe the purpose of the data warehouse and
+how it integrates data from CRM and ERP source systems.
 
----
-## 📖 Project Overview
+## 🏗️ Data Warehouse Architecture
+Explain the overall architecture and the flow of data
+from source files to the final data warehouse.
 
-This project involves:
+## 🛠️ Tech Stack
+- Microsoft SQL Server
+- SQL Server Management Studio (SSMS)
+- SQL
+- CSV files
+- Git and GitHub
 
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
+## 📂 Data Sources
+Describe the CRM and ERP source systems, the CSV files
+used, and the types of data they contain.
 
----
+## 🔄 ETL Process
+Explain the extraction, transformation, and loading
+process used to move data through the warehouse.
 
-## 🚀 Project Requirements
+## 🥉 Bronze Layer
+- Stores raw data from source files.
+- Loads data into bronze tables.
+- Uses a full-load strategy where applicable.
 
-### Building the Data Warehouse (Data Engineering)
+## 🥈 Silver Layer
+- Cleans and standardizes the raw data.
+- Handles nulls, duplicates, and invalid values.
+- Applies data type conversions and data quality rules.
 
-#### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+## 🥇 Gold Layer
+- Integrates transformed data.
+- Organizes business-ready data.
+- Implements a star schema with fact and dimension views.
 
-#### Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the latest dataset only.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+## 🗂️ Database Structure
+Document the schemas, tables, views, and their purposes.
 
----
+## ⚙️ Stored Procedures
+Describe the stored procedures used for loading
+and transforming data.
 
-### BI: Analytics & Reporting (Data Analysis)
+## 🚀 Getting Started
+1. Clone this repository.
+2. Open the SQL scripts in SSMS.
+3. Configure the database and source file paths.
+4. Execute the scripts in the correct order.
+5. Verify that each layer loads successfully.
 
-#### Objective
-Develop SQL-based analytics to deliver detailed insights into:
-- **Customer Behavior**
-- **Product Performance**
-- **Sales Trends**
+## 📁 Project Structure
+Show the repository folders and important SQL files.
 
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
+## 🔮 Future Improvements
+List planned improvements to the warehouse architecture,
+data quality, performance, and loading process.
 
-For more details, refer to [docs/requirements.md](docs/requirements.md).
-
-## 📂 Repository Structure
-```
-data-warehouse-project/
-│
-├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
-│   ├── source_crm/                     # CRM source: customers, products, sales details
-│   ├── source_erp/                     # ERP source: customer birthdates and gender, locations, product categories
-│
-├── docs/                               # Project documentation and architecture details
-│   ├── requirements.md                 # Project requirements (also as Project_Requirements.pdf)
-│   ├── data_architecture.png           # The project's architecture (bronze, silver, gold)
-│   ├── data_flow.png                   # Data flow diagram
-│   ├── data_integration.png            # How the source tables relate to each other
-│   ├── data_model.png                  # Data model (star schema)
-│   ├── ETL.png                         # The ETL techniques and methods used
-│   ├── data_catalog.md                 # Catalog of the gold layer, field descriptions and metadata
-│   ├── naming_conventions.md           # Consistent naming guidelines for tables, columns, and files
-│   ├── data_layers.pdf                 # The three layers side by side
-│   ├── Project_Notes_Sketches.pdf      # Baraa's project notes and sketches
-│
-├── scripts/                            # SQL scripts for ETL and transformations
-│   ├── init_database.sql               # Creates the database and the three schemas
-│   ├── bronze/                         # Scripts for extracting and loading raw data
-│   ├── silver/                         # Scripts for cleaning and transforming data
-│   ├── gold/                           # Scripts for creating analytical models
-│
-├── tests/                              # Quality checks for the silver and gold layers
-│
-├── README.md                           # Project overview and instructions
-├── LICENSE                             # License information for the repository
-└── .gitignore                          # Files and directories to be ignored by Git
-```
----
+## 👤 Author
+Ajay Bharati
+LinkedIn: https://www.linkedin.com/in/ajay44/
+GitHub: Add your GitHub profile URL
