@@ -130,8 +130,8 @@ The Gold layer uses a star schema consisting of:
 
 **Ajay Bharati**
 
-- LinkedIn: (https://www.linkedin.com/in/ajay44/)
-- GitHub: Add your GitHub profile URL.
+- LinkedIn: https://www.linkedin.com/in/ajay44/
+- GitHub: https://github.com/ajay4477-ai
 
 ---
 
