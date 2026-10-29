@@ -12,6 +12,8 @@ The final data is organized into fact and dimension views that can be used for P
 
 The project follows a three-layer Medallion Architecture:
 
+![Data Warehouse Architecture](documents/data_architecture.png)
+
 - **Bronze Layer:** Stores raw data extracted from CRM and ERP CSV files.
 - **Silver Layer:** Cleans, standardizes, and transforms raw data to improve data quality and consistency.
 - **Gold Layer:** Integrates transformed data and provides business-ready fact and dimension views using a star schema.
@@ -64,8 +66,6 @@ Contains additional business data from the ERP system, including supporting info
 The source files contain different data types, such as integers, decimal numbers, strings, and dates. These files are loaded into SQL Server for further processing.
 
 ## ETL Process
-
-ETL stands for **Extract, Transform, and Load**. It describes the process of collecting data from source systems, preparing it for reliable use, and making it available in the data warehouse.
 
 ### 1. Extract
 
@@ -155,20 +155,6 @@ The database is organized into three schemas:
 
 Each schema separates the responsibilities of data ingestion, transformation, and presentation, making the data warehouse easier to maintain and extend.
 
-## Stored Procedures
-
-Stored procedures are used to organize and execute repeatable data-loading operations.
-
-The Bronze loading procedure, `bronze.load_bronze`, manages the loading of source data into the Bronze layer.
-
-SQL scripts are also used to create and populate Silver tables and define Gold-layer views.
-
-This approach helps organize the loading and transformation logic into reusable database objects.
-
-## Getting Started
-
-Follow these steps to set up the project locally.
-
 ### Prerequisites
 
 - Microsoft SQL Server
@@ -176,53 +162,11 @@ Follow these steps to set up the project locally.
 - CRM and ERP source CSV files
 - Git
 
-### Installation and Setup
-
-**1. Clone the repository**
-
-```bash
-git clone <your-repository-url>
-```
-
-**2. Open the project**
-
-Open SQL Server Management Studio and connect to your SQL Server instance.
-
-**3. Create the database**
-
-Create the target data warehouse database and configure the required schemas and tables using the provided SQL scripts.
-
-**4. Configure source file paths**
-
-Update the CSV file paths in the loading scripts to match your local environment. Ensure that SQL Server has permission to access the source files.
-
-**5. Execute the SQL scripts**
-
-Run the scripts in the correct dependency order:
-
-1. Database and schema creation.
-2. Bronze table creation and source data loading.
-3. Silver table creation and data transformation.
-4. Gold view creation.
-
-**6. Validate the results**
-
-Verify that the data has been loaded into the Bronze tables, transformed data is available in the Silver tables, and the Gold views return the expected results.
-
-## 🔮 Future Improvements
-
-- Implement incremental data loading.
-- Add automated data quality checks.
-- Improve ETL error handling and logging.
-- Optimize query and data-loading performance.
-- Introduce automated pipeline scheduling.
-- Extend the data warehouse to support additional source systems.
-
 ## 👤 Author
 
 **Ajay Bharati**
 
-- LinkedIn: [Ajay Bharati](https://www.linkedin.com/in/ajay44/)
+- LinkedIn: (https://www.linkedin.com/in/ajay44/)
 - GitHub: Add your GitHub profile URL.
 
 ---
